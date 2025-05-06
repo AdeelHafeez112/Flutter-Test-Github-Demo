@@ -11,7 +11,7 @@ class _MyHomePageState extends State<SecondScreen> {
 
   void _incrementCounter() {
     setState(() {
-      _counter--;
+      _counter++;
     });
   }
 
@@ -30,10 +30,10 @@ class _MyHomePageState extends State<SecondScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('You have pushed the button this many times:'),
+            const Text('You have pushed the button this many times:',style: TextStyle(color: Colors.white, fontSize: 18),),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              style: TextStyle(color: Colors.white, fontSize: 24),
             ),
           ],
         ),

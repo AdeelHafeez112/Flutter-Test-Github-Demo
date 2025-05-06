@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/Screens/my_homepage.dart';
+import 'package:test_app/utils/route_name.dart';
+import 'package:test_app/utils/routes.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -9,7 +10,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const MyHomePage(),
+      initialRoute: RouteName.homepage,
+      onGenerateRoute: Routes.generateRoute,
     );
   }
 }
